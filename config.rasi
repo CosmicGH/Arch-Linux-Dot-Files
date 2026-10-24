@@ -1,0 +1,56 @@
+@import "~/.cache/wal/colors-rofi-dark"
+
+configuration {
+    //Shows icons
+    show-icons: true;
+}
+
+entry {
+    //Changes text in entry box
+    placeholder: "";
+}
+
+element {
+    //Spacing between icons and text
+    spacing: 10px;
+}
+
+element-icon {
+    //Icon size
+    size: 1.5em;
+}
+
+element-text {
+    //Moves text up and down from 0-1
+    vertical-align: 0.5;
+    //Changes letters that are also in the current entry
+    highlight: bold;
+}
+
+window {
+    //Sets windows padding
+    padding: 0px;
+    //Sets window height
+    height: calc(20.4%);
+    //Sets window width
+    width: calc(25%);
+    //Sets border size
+    border: 0px;
+    //Sets border color
+    border-color: @foreground;
+}
+
+listview {
+    //Disables or enables scrollbar
+    scrollbar: false;
+}
+
+inputbar {
+    //Specifies which inputbar sections to include
+    children: [entry,overlay,case-indicator];
+}
+
+entry {
+    placeholder: "Application:";
+    cursor-width: 0px;
+}
